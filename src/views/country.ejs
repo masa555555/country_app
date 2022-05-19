@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coutry app</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header__logo">Node JS</div>
+        <div class="header__search">Search</div>
+    </header>
+
+    <!-- <a href="/name/<% countryList.name %>">CLICK</a> -->
+    <div class="wrapper">
+        <div class="countries">
+                <% for(let i = 0; i < countryList.length; i++ ){ %>
+                    <a href="/country/<%- countryList[i].name %>" class="country_card">
+                        <h2><%- countryList[i].name %></h2>
+                        <img src="<%- countryList[i].flags.svg %>" alt="">
+                    </a>
+                <% } %>        
+        </div>
+    </div>
+
+    <!-- <script src="../../public/js/script.js"></script> -->
+</body>
+</html>
