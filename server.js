@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({extended : true}))
 // //routes
 const coutryRouter = require('./src/routes/country');
 app.use('/', coutryRouter);//Frontpage
-app.use('/country', coutryRouter);//eachPage
+app.use('/country', coutryRouter);
 
 
 app.listen(port, () => console.log(`Lisitening port number ${port}`));

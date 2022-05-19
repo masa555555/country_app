@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image.svg" sizes="32x32" href="../design/walk-outline.svg">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>WHERE IN THE WORLD</title>
+    <link rel="stylesheet" href="/public/css/index.css">
+</head>
+<body>
+	<div class="container_parent">
+		<h1>LET'S SEARCH COUNTRY</h1>
+		<form>
+			<input type="text" class="user_input">
+		</form>
+		<div class="country_List">
+			<% for(let i = 0; i < countryList.length; i++ ){ %>
+				<a href="/country/<%- countryList[i].name %>" class="country_card">
+					<h2 class="country-name"><%- countryList[i].name %></h2>
+					<img src="<%- countryList[i].flags.svg %>" width="100px" height="auto">
+				</a>
+			<% } %>        
+		</div>
+	</div>
+</body>
+
+</html>

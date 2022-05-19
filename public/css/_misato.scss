@@ -1,0 +1,38 @@
+
+
+
+form {
+    text-align: center;
+    margin: 20px;
+}
+
+.user_input:focus {
+    width: 400px;
+    height: 70px;
+    outline: none;
+    border-bottom: 1px solid gray;
+}
+
+
+
+.container_parent {
+    padding: 20px;
+    text-align: center;
+}
+
+.country_List {
+    display: grid;
+    gap:1rem;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.country_card {
+    display: inline-block;
+    border: 0.5px solid gray;
+    text-align: center;
+}
+
+.country_name {
+    font-size: 2rem;
+}
