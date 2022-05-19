@@ -5,10 +5,12 @@ const app = express()
 const port = 7000
 
 //read css,js and image
-app.use(express.static('public'));
-app.use('/css', express.static(__dirname + 'public/css'));
-app.use('/js', express.static(__dirname + 'public/js'));
-app.use('/image', express.static(__dirname + 'public/image'));
+
+app.use("/public", express.static('./public/'));
+
+// app.use('/css', express.static(__dirname + 'public/css'));
+// app.use('/js', express.static(__dirname + 'public/js'));
+// app.use('/image', express.static(__dirname + 'public/image'));
 
 // Templating Engine
 app.set('views', './src/views')
