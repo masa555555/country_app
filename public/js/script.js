@@ -25,8 +25,9 @@ console.log(countryArray[1].className);
 function checkString() {
     user_input.addEventListener('keyup', function() {
         let value = user_input_value = user_input.value;
+        let evaluateValue = value[0].toUpperCase();
         for (let i = 0; i < countryArray.length; i++) {
-            if(countryArray[i].classList[2].includes(value)) {
+            if(countryArray[i].classList[2].includes(evaluateValue)) {
                 countryArray[i].style.display = "block";
             } else {
                 countryArray[i].style.display = "none";
@@ -36,7 +37,6 @@ function checkString() {
 }
 
 checkString();
-
 
 
 
