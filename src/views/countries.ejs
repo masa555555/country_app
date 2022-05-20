@@ -19,7 +19,7 @@
 			<select name="country" id="country-select">
 				<option>--Please choose an option--</option>
 				<option value="Africa">Africa</option>
-				<option value="America">America</option>
+				<option value="Americas">Americas</option>
 				<option value="Asia">Asia</option>
 				<option value="Europe">Europe</option>
 				<option value="Oceania">Oceania</option>
@@ -28,7 +28,7 @@
 
 		<div id="country_List" class="country_List">
 			<% for(let i = 0; i < countryList.length; i++ ){ %>
-				<div class="country_card <%- countryList[i].region %>">
+				<div class="country_card <%- countryList[i].region %> <%- countryList[i].name %>">
 					<a href="/country/<%- countryList[i].name %>">
 						<h2 class="country-name"><%- countryList[i].name %></h2>
 						<img src="<%- countryList[i].flags.svg %>" width="200px" height="auto">
