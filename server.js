@@ -6,7 +6,8 @@ const port = 7000
 
 //read css,js and image
 
-app.use("/public", express.static('./public/'));
+// app.use("/public", express.static('./public/'));
+app.use("/public", express.static('public'));
 
 // app.use('/css', express.static(__dirname + 'public/css'));
 // app.use('/js', express.static(__dirname + 'public/js'));

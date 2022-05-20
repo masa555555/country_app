@@ -1,19 +1,46 @@
 /* Mixins */
-form {
-  text-align: center;
-  margin: 20px;
-}
-
-.user_input:focus {
-  width: 400px;
-  height: 70px;
-  outline: none;
-  border-bottom: 1px solid gray;
-}
-
 .container_parent {
   padding: 20px;
   text-align: center;
+}
+
+.user_input_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+form {
+  text-align: center;
+  margin-right: 30px;
+}
+
+#country_select {
+  display: inline-block;
+  height: 20px;
+}
+
+.user_input {
+  width: 300px;
+  height: 20px;
+  border: none;
+  border-bottom: 3px solid gray;
+}
+
+.user_input::-moz-placeholder {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.user_input:-ms-input-placeholder {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.user_input::placeholder {
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 .country_List {
@@ -30,6 +57,10 @@ form {
 
 .country_name {
   font-size: 2rem;
+}
+
+.back1 {
+  background-color: aqua;
 }
 
 /* Variables */

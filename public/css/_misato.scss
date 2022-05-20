@@ -1,24 +1,38 @@
-
-
-
-form {
-    text-align: center;
-    margin: 20px;
-}
-
-.user_input:focus {
-    width: 400px;
-    height: 70px;
-    outline: none;
-    border-bottom: 1px solid gray;
-}
-
-
-
+//countries page
 .container_parent {
     padding: 20px;
     text-align: center;
 }
+
+.user_input_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+form {
+    text-align: center;
+    margin-right: 30px;
+}
+
+#country_select {
+    display: inline-block;
+    height: 20px;
+}
+
+.user_input {
+    width: 300px;
+    height: 20px;
+    border: none;
+    border-bottom: 3px solid gray;
+}
+
+.user_input::placeholder{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
 
 .country_List {
     display: grid;
@@ -28,11 +42,8 @@ form {
 }
 
 .country_card {
-    display: inline-block;
-    border: 0.5px solid gray;
+    border: 1px solid black;
     text-align: center;
 }
 
-.country_name {
-    font-size: 2rem;
-}
+
